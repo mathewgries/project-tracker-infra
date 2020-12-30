@@ -1,7 +1,7 @@
 {
-  "name": "serverless-stack-demo-ext-resources",
+  "name": "project-tracker-resources",
   "version": "0.1.0",
-  "description": "[Serverless Stack](https://serverless-stack.com) is a free comprehensive guide to creating full-stack serverless applications. We create a [note taking app](https://demo2.serverless-stack.com) from scratch.",
+  "description": "An app to track work projects",
   "private": true,
   "scripts": {
     "test": "sst test",
