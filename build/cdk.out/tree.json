@@ -8,17 +8,17 @@
         "id": "Tree",
         "path": "Tree"
       },
-      "dev-notes-ext-infra-dynamodb": {
-        "id": "dev-notes-ext-infra-dynamodb",
-        "path": "dev-notes-ext-infra-dynamodb",
+      "dev-project-tracker-infra-dynamodb": {
+        "id": "dev-project-tracker-infra-dynamodb",
+        "path": "dev-project-tracker-infra-dynamodb",
         "children": {
           "Table": {
             "id": "Table",
-            "path": "dev-notes-ext-infra-dynamodb/Table",
+            "path": "dev-project-tracker-infra-dynamodb/Table",
             "children": {
               "Resource": {
                 "id": "Resource",
-                "path": "dev-notes-ext-infra-dynamodb/Table/Resource",
+                "path": "dev-project-tracker-infra-dynamodb/Table/Resource",
                 "attributes": {
                   "aws:cdk:cloudformation:type": "AWS::DynamoDB::Table",
                   "aws:cdk:cloudformation:props": {
@@ -28,7 +28,7 @@
                         "keyType": "HASH"
                       },
                       {
-                        "attributeName": "noteId",
+                        "attributeName": "projectId",
                         "keyType": "RANGE"
                       }
                     ],
@@ -38,7 +38,7 @@
                         "attributeType": "S"
                       },
                       {
-                        "attributeName": "noteId",
+                        "attributeName": "projectId",
                         "attributeType": "S"
                       }
                     ],
@@ -48,31 +48,31 @@
               },
               "ScalingRole": {
                 "id": "ScalingRole",
-                "path": "dev-notes-ext-infra-dynamodb/Table/ScalingRole"
+                "path": "dev-project-tracker-infra-dynamodb/Table/ScalingRole"
               }
             }
           },
           "TableName": {
             "id": "TableName",
-            "path": "dev-notes-ext-infra-dynamodb/TableName"
+            "path": "dev-project-tracker-infra-dynamodb/TableName"
           },
           "TableArn": {
             "id": "TableArn",
-            "path": "dev-notes-ext-infra-dynamodb/TableArn"
+            "path": "dev-project-tracker-infra-dynamodb/TableArn"
           }
         }
       },
-      "dev-notes-ext-infra-s3": {
-        "id": "dev-notes-ext-infra-s3",
-        "path": "dev-notes-ext-infra-s3",
+      "dev-project-tracker-infra-s3": {
+        "id": "dev-project-tracker-infra-s3",
+        "path": "dev-project-tracker-infra-s3",
         "children": {
           "Uploads": {
             "id": "Uploads",
-            "path": "dev-notes-ext-infra-s3/Uploads",
+            "path": "dev-project-tracker-infra-s3/Uploads",
             "children": {
               "Resource": {
                 "id": "Resource",
-                "path": "dev-notes-ext-infra-s3/Uploads/Resource",
+                "path": "dev-project-tracker-infra-s3/Uploads/Resource",
                 "attributes": {
                   "aws:cdk:cloudformation:type": "AWS::S3::Bucket",
                   "aws:cdk:cloudformation:props": {
@@ -101,37 +101,37 @@
               },
               "Notifications": {
                 "id": "Notifications",
-                "path": "dev-notes-ext-infra-s3/Uploads/Notifications"
+                "path": "dev-project-tracker-infra-s3/Uploads/Notifications"
               }
             }
           },
           "AttachmentsBucketName": {
             "id": "AttachmentsBucketName",
-            "path": "dev-notes-ext-infra-s3/AttachmentsBucketName"
+            "path": "dev-project-tracker-infra-s3/AttachmentsBucketName"
           },
           "Exports": {
             "id": "Exports",
-            "path": "dev-notes-ext-infra-s3/Exports",
+            "path": "dev-project-tracker-infra-s3/Exports",
             "children": {
               "Output{\"Fn::GetAtt\":[\"Uploads4F6EB0FD\",\"Arn\"]}": {
                 "id": "Output{\"Fn::GetAtt\":[\"Uploads4F6EB0FD\",\"Arn\"]}",
-                "path": "dev-notes-ext-infra-s3/Exports/Output{\"Fn::GetAtt\":[\"Uploads4F6EB0FD\",\"Arn\"]}"
+                "path": "dev-project-tracker-infra-s3/Exports/Output{\"Fn::GetAtt\":[\"Uploads4F6EB0FD\",\"Arn\"]}"
               }
             }
           }
         }
       },
-      "dev-notes-ext-infra-cognito": {
-        "id": "dev-notes-ext-infra-cognito",
-        "path": "dev-notes-ext-infra-cognito",
+      "dev-project-tracker-infra-cognito": {
+        "id": "dev-project-tracker-infra-cognito",
+        "path": "dev-project-tracker-infra-cognito",
         "children": {
           "UserPool": {
             "id": "UserPool",
-            "path": "dev-notes-ext-infra-cognito/UserPool",
+            "path": "dev-project-tracker-infra-cognito/UserPool",
             "children": {
               "Resource": {
                 "id": "Resource",
-                "path": "dev-notes-ext-infra-cognito/UserPool/Resource",
+                "path": "dev-project-tracker-infra-cognito/UserPool/Resource",
                 "attributes": {
                   "aws:cdk:cloudformation:type": "AWS::Cognito::UserPool",
                   "aws:cdk:cloudformation:props": {
@@ -172,11 +172,11 @@
           },
           "UserPoolClient": {
             "id": "UserPoolClient",
-            "path": "dev-notes-ext-infra-cognito/UserPoolClient",
+            "path": "dev-project-tracker-infra-cognito/UserPoolClient",
             "children": {
               "Resource": {
                 "id": "Resource",
-                "path": "dev-notes-ext-infra-cognito/UserPoolClient/Resource",
+                "path": "dev-project-tracker-infra-cognito/UserPoolClient/Resource",
                 "attributes": {
                   "aws:cdk:cloudformation:type": "AWS::Cognito::UserPoolClient",
                   "aws:cdk:cloudformation:props": {
@@ -209,7 +209,7 @@
           },
           "IdentityPool": {
             "id": "IdentityPool",
-            "path": "dev-notes-ext-infra-cognito/IdentityPool",
+            "path": "dev-project-tracker-infra-cognito/IdentityPool",
             "attributes": {
               "aws:cdk:cloudformation:type": "AWS::Cognito::IdentityPool",
               "aws:cdk:cloudformation:props": {
@@ -232,15 +232,15 @@
           },
           "CognitoAuthRole": {
             "id": "CognitoAuthRole",
-            "path": "dev-notes-ext-infra-cognito/CognitoAuthRole",
+            "path": "dev-project-tracker-infra-cognito/CognitoAuthRole",
             "children": {
               "cognitoDefaultAuthenticatedRole": {
                 "id": "cognitoDefaultAuthenticatedRole",
-                "path": "dev-notes-ext-infra-cognito/CognitoAuthRole/cognitoDefaultAuthenticatedRole",
+                "path": "dev-project-tracker-infra-cognito/CognitoAuthRole/cognitoDefaultAuthenticatedRole",
                 "children": {
                   "Resource": {
                     "id": "Resource",
-                    "path": "dev-notes-ext-infra-cognito/CognitoAuthRole/cognitoDefaultAuthenticatedRole/Resource",
+                    "path": "dev-project-tracker-infra-cognito/CognitoAuthRole/cognitoDefaultAuthenticatedRole/Resource",
                     "attributes": {
                       "aws:cdk:cloudformation:type": "AWS::IAM::Role",
                       "aws:cdk:cloudformation:props": {
@@ -271,11 +271,11 @@
                   },
                   "DefaultPolicy": {
                     "id": "DefaultPolicy",
-                    "path": "dev-notes-ext-infra-cognito/CognitoAuthRole/cognitoDefaultAuthenticatedRole/DefaultPolicy",
+                    "path": "dev-project-tracker-infra-cognito/CognitoAuthRole/cognitoDefaultAuthenticatedRole/DefaultPolicy",
                     "children": {
                       "Resource": {
                         "id": "Resource",
-                        "path": "dev-notes-ext-infra-cognito/CognitoAuthRole/cognitoDefaultAuthenticatedRole/DefaultPolicy/Resource",
+                        "path": "dev-project-tracker-infra-cognito/CognitoAuthRole/cognitoDefaultAuthenticatedRole/DefaultPolicy/Resource",
                         "attributes": {
                           "aws:cdk:cloudformation:type": "AWS::IAM::Policy",
                           "aws:cdk:cloudformation:props": {
@@ -298,7 +298,7 @@
                                       "",
                                       [
                                         {
-                                          "Fn::ImportValue": "dev-notes-ext-infra-s3:ExportsOutputFnGetAttUploads4F6EB0FDArn5513CBEA"
+                                          "Fn::ImportValue": "dev-project-tracker-infra-s3:ExportsOutputFnGetAttUploads4F6EB0FDArn5513CBEA"
                                         },
                                         "/private/${cognito-identity.amazonaws.com:sub}/*"
                                       ]
@@ -323,7 +323,7 @@
               },
               "identityPoolRoleAttachment": {
                 "id": "identityPoolRoleAttachment",
-                "path": "dev-notes-ext-infra-cognito/CognitoAuthRole/identityPoolRoleAttachment",
+                "path": "dev-project-tracker-infra-cognito/CognitoAuthRole/identityPoolRoleAttachment",
                 "attributes": {
                   "aws:cdk:cloudformation:type": "AWS::Cognito::IdentityPoolRoleAttachment",
                   "aws:cdk:cloudformation:props": {
@@ -345,19 +345,19 @@
           },
           "UserPoolId": {
             "id": "UserPoolId",
-            "path": "dev-notes-ext-infra-cognito/UserPoolId"
+            "path": "dev-project-tracker-infra-cognito/UserPoolId"
           },
           "UserPoolClientId": {
             "id": "UserPoolClientId",
-            "path": "dev-notes-ext-infra-cognito/UserPoolClientId"
+            "path": "dev-project-tracker-infra-cognito/UserPoolClientId"
           },
           "IdentityPoolId": {
             "id": "IdentityPoolId",
-            "path": "dev-notes-ext-infra-cognito/IdentityPoolId"
+            "path": "dev-project-tracker-infra-cognito/IdentityPoolId"
           },
           "AuthenticatedRoleName": {
             "id": "AuthenticatedRoleName",
-            "path": "dev-notes-ext-infra-cognito/AuthenticatedRoleName"
+            "path": "dev-project-tracker-infra-cognito/AuthenticatedRoleName"
           }
         }
       }

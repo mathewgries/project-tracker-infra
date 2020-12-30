@@ -35,7 +35,7 @@
         }
       },
       "Metadata": {
-        "aws:cdk:path": "dev-notes-ext-infra-cognito/UserPool/Resource"
+        "aws:cdk:path": "dev-project-tracker-infra-cognito/UserPool/Resource"
       }
     },
     "UserPoolClient2F5918F7": {
@@ -65,7 +65,7 @@
         ]
       },
       "Metadata": {
-        "aws:cdk:path": "dev-notes-ext-infra-cognito/UserPoolClient/Resource"
+        "aws:cdk:path": "dev-project-tracker-infra-cognito/UserPoolClient/Resource"
       }
     },
     "IdentityPool": {
@@ -87,7 +87,7 @@
         ]
       },
       "Metadata": {
-        "aws:cdk:path": "dev-notes-ext-infra-cognito/IdentityPool"
+        "aws:cdk:path": "dev-project-tracker-infra-cognito/IdentityPool"
       }
     },
     "CognitoAuthRolecognitoDefaultAuthenticatedRole7D725957": {
@@ -117,7 +117,7 @@
         }
       },
       "Metadata": {
-        "aws:cdk:path": "dev-notes-ext-infra-cognito/CognitoAuthRole/cognitoDefaultAuthenticatedRole/Resource"
+        "aws:cdk:path": "dev-project-tracker-infra-cognito/CognitoAuthRole/cognitoDefaultAuthenticatedRole/Resource"
       }
     },
     "CognitoAuthRolecognitoDefaultAuthenticatedRoleDefaultPolicyFAF21ADB": {
@@ -142,7 +142,7 @@
                   "",
                   [
                     {
-                      "Fn::ImportValue": "dev-notes-ext-infra-s3:ExportsOutputFnGetAttUploads4F6EB0FDArn5513CBEA"
+                      "Fn::ImportValue": "dev-project-tracker-infra-s3:ExportsOutputFnGetAttUploads4F6EB0FDArn5513CBEA"
                     },
                     "/private/${cognito-identity.amazonaws.com:sub}/*"
                   ]
@@ -160,7 +160,7 @@
         ]
       },
       "Metadata": {
-        "aws:cdk:path": "dev-notes-ext-infra-cognito/CognitoAuthRole/cognitoDefaultAuthenticatedRole/DefaultPolicy/Resource"
+        "aws:cdk:path": "dev-project-tracker-infra-cognito/CognitoAuthRole/cognitoDefaultAuthenticatedRole/DefaultPolicy/Resource"
       }
     },
     "CognitoAuthRoleidentityPoolRoleAttachmentE5EE99EB": {
@@ -179,7 +179,7 @@
         }
       },
       "Metadata": {
-        "aws:cdk:path": "dev-notes-ext-infra-cognito/CognitoAuthRole/identityPoolRoleAttachment"
+        "aws:cdk:path": "dev-project-tracker-infra-cognito/CognitoAuthRole/identityPoolRoleAttachment"
       }
     }
   },
@@ -204,7 +204,7 @@
         "Ref": "CognitoAuthRolecognitoDefaultAuthenticatedRole7D725957"
       },
       "Export": {
-        "Name": "dev-notes-ext-infra-CognitoAuthRole"
+        "Name": "dev-project-tracker-infra-ProjectTrackerCognitoAuthRole"
       }
     }
   }

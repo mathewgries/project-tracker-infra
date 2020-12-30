@@ -27,7 +27,7 @@
       "UpdateReplacePolicy": "Retain",
       "DeletionPolicy": "Retain",
       "Metadata": {
-        "aws:cdk:path": "dev-notes-ext-infra-s3/Uploads/Resource"
+        "aws:cdk:path": "dev-project-tracker-infra-s3/Uploads/Resource"
       }
     }
   },
@@ -45,7 +45,7 @@
         ]
       },
       "Export": {
-        "Name": "dev-notes-ext-infra-s3:ExportsOutputFnGetAttUploads4F6EB0FDArn5513CBEA"
+        "Name": "dev-project-tracker-infra-s3:ExportsOutputFnGetAttUploads4F6EB0FDArn5513CBEA"
       }
     }
   }

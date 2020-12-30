@@ -9,7 +9,7 @@
             "KeyType": "HASH"
           },
           {
-            "AttributeName": "noteId",
+            "AttributeName": "projectId",
             "KeyType": "RANGE"
           }
         ],
@@ -19,7 +19,7 @@
             "AttributeType": "S"
           },
           {
-            "AttributeName": "noteId",
+            "AttributeName": "projectId",
             "AttributeType": "S"
           }
         ],
@@ -28,7 +28,7 @@
       "UpdateReplacePolicy": "Retain",
       "DeletionPolicy": "Retain",
       "Metadata": {
-        "aws:cdk:path": "dev-notes-ext-infra-dynamodb/Table/Resource"
+        "aws:cdk:path": "dev-project-tracker-infra-dynamodb/Table/Resource"
       }
     }
   },
@@ -38,7 +38,7 @@
         "Ref": "TableCD117FA1"
       },
       "Export": {
-        "Name": "dev-notes-ext-infra-TableName"
+        "Name": "dev-project-tracker-infra-TableName"
       }
     },
     "TableArn": {
@@ -49,7 +49,7 @@
         ]
       },
       "Export": {
-        "Name": "dev-notes-ext-infra-TableArn"
+        "Name": "dev-project-tracker-infra-TableArn"
       }
     }
   }
