@@ -28,7 +28,7 @@
       "UpdateReplacePolicy": "Retain",
       "DeletionPolicy": "Retain",
       "Metadata": {
-        "aws:cdk:path": "dev-project-tracker-infra-dynamodb/Table/Resource"
+        "aws:cdk:path": "dev-project-tracker-infra-projects/Table/Resource"
       }
     }
   },

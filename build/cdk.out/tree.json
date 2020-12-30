@@ -8,17 +8,17 @@
         "id": "Tree",
         "path": "Tree"
       },
-      "dev-project-tracker-infra-dynamodb": {
-        "id": "dev-project-tracker-infra-dynamodb",
-        "path": "dev-project-tracker-infra-dynamodb",
+      "dev-project-tracker-infra-projects": {
+        "id": "dev-project-tracker-infra-projects",
+        "path": "dev-project-tracker-infra-projects",
         "children": {
           "Table": {
             "id": "Table",
-            "path": "dev-project-tracker-infra-dynamodb/Table",
+            "path": "dev-project-tracker-infra-projects/Table",
             "children": {
               "Resource": {
                 "id": "Resource",
-                "path": "dev-project-tracker-infra-dynamodb/Table/Resource",
+                "path": "dev-project-tracker-infra-projects/Table/Resource",
                 "attributes": {
                   "aws:cdk:cloudformation:type": "AWS::DynamoDB::Table",
                   "aws:cdk:cloudformation:props": {
@@ -48,17 +48,17 @@
               },
               "ScalingRole": {
                 "id": "ScalingRole",
-                "path": "dev-project-tracker-infra-dynamodb/Table/ScalingRole"
+                "path": "dev-project-tracker-infra-projects/Table/ScalingRole"
               }
             }
           },
           "TableName": {
             "id": "TableName",
-            "path": "dev-project-tracker-infra-dynamodb/TableName"
+            "path": "dev-project-tracker-infra-projects/TableName"
           },
           "TableArn": {
             "id": "TableArn",
-            "path": "dev-project-tracker-infra-dynamodb/TableArn"
+            "path": "dev-project-tracker-infra-projects/TableArn"
           }
         }
       },

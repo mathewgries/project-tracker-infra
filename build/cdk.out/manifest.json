@@ -7,20 +7,20 @@
         "file": "tree.json"
       }
     },
-    "dev-project-tracker-infra-dynamodb": {
+    "dev-project-tracker-infra-projects": {
       "type": "aws:cloudformation:stack",
       "environment": "aws://473965886370/us-east-1",
       "properties": {
-        "templateFile": "dev-project-tracker-infra-dynamodb.template.json"
+        "templateFile": "dev-project-tracker-infra-projects.template.json"
       },
       "metadata": {
-        "/dev-project-tracker-infra-dynamodb/Table/Resource": [
+        "/dev-project-tracker-infra-projects/Table/Resource": [
           {
             "type": "aws:cdk:logicalId",
             "data": "TableCD117FA1",
             "trace": [
               "new Table (/Users/mat/projects/project-tracker/project-tracker-infra/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:895:18)",
-              "new DynamoDBStack (/Users/mat/projects/project-tracker/project-tracker-infra/lib/DynamoDBStack.js:11:19)",
+              "new ProjectsDBStack (/Users/mat/projects/project-tracker/project-tracker-infra/lib/ProjectsDBStack.js:11:19)",
               "Object.main [as default] (/Users/mat/projects/project-tracker/project-tracker-infra/lib/index.js:7:3)",
               "Object.<anonymous> (/Users/mat/projects/project-tracker/project-tracker-infra/build/run.js:41:16)",
               "Module._compile (internal/modules/cjs/loader.js:1063:30)",
@@ -32,12 +32,12 @@
             ]
           }
         ],
-        "/dev-project-tracker-infra-dynamodb/TableName": [
+        "/dev-project-tracker-infra-projects/TableName": [
           {
             "type": "aws:cdk:logicalId",
             "data": "TableName",
             "trace": [
-              "new DynamoDBStack (/Users/mat/projects/project-tracker/project-tracker-infra/lib/DynamoDBStack.js:18:5)",
+              "new ProjectsDBStack (/Users/mat/projects/project-tracker/project-tracker-infra/lib/ProjectsDBStack.js:18:5)",
               "Object.main [as default] (/Users/mat/projects/project-tracker/project-tracker-infra/lib/index.js:7:3)",
               "Object.<anonymous> (/Users/mat/projects/project-tracker/project-tracker-infra/build/run.js:41:16)",
               "Module._compile (internal/modules/cjs/loader.js:1063:30)",
@@ -49,12 +49,12 @@
             ]
           }
         ],
-        "/dev-project-tracker-infra-dynamodb/TableArn": [
+        "/dev-project-tracker-infra-projects/TableArn": [
           {
             "type": "aws:cdk:logicalId",
             "data": "TableArn",
             "trace": [
-              "new DynamoDBStack (/Users/mat/projects/project-tracker/project-tracker-infra/lib/DynamoDBStack.js:22:5)",
+              "new ProjectsDBStack (/Users/mat/projects/project-tracker/project-tracker-infra/lib/ProjectsDBStack.js:22:5)",
               "Object.main [as default] (/Users/mat/projects/project-tracker/project-tracker-infra/lib/index.js:7:3)",
               "Object.<anonymous> (/Users/mat/projects/project-tracker/project-tracker-infra/build/run.js:41:16)",
               "Module._compile (internal/modules/cjs/loader.js:1063:30)",
