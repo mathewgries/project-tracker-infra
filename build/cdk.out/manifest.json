@@ -7,17 +7,17 @@
         "file": "tree.json"
       }
     },
-    "dev-project-tracker-infra-projects": {
+    "dev-project-tracker-infra-projectsDb": {
       "type": "aws:cloudformation:stack",
       "environment": "aws://473965886370/us-east-1",
       "properties": {
-        "templateFile": "dev-project-tracker-infra-projects.template.json"
+        "templateFile": "dev-project-tracker-infra-projectsDb.template.json"
       },
       "metadata": {
-        "/dev-project-tracker-infra-projects/Table/Resource": [
+        "/dev-project-tracker-infra-projectsDb/ProjectsTable/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "TableCD117FA1",
+            "data": "ProjectsTableAA0A2089",
             "trace": [
               "new Table (/Users/mat/projects/project-tracker/project-tracker-infra/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:895:18)",
               "new ProjectsDBStack (/Users/mat/projects/project-tracker/project-tracker-infra/lib/ProjectsDBStack.js:11:19)",
@@ -32,10 +32,10 @@
             ]
           }
         ],
-        "/dev-project-tracker-infra-projects/TableName": [
+        "/dev-project-tracker-infra-projectsDb/ProjectsTableName": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "TableName",
+            "data": "ProjectsTableName",
             "trace": [
               "new ProjectsDBStack (/Users/mat/projects/project-tracker/project-tracker-infra/lib/ProjectsDBStack.js:18:5)",
               "Object.main [as default] (/Users/mat/projects/project-tracker/project-tracker-infra/lib/index.js:7:3)",
@@ -49,10 +49,10 @@
             ]
           }
         ],
-        "/dev-project-tracker-infra-projects/TableArn": [
+        "/dev-project-tracker-infra-projectsDb/ProjectsTableArn": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "TableArn",
+            "data": "ProjectsTableArn",
             "trace": [
               "new ProjectsDBStack (/Users/mat/projects/project-tracker/project-tracker-infra/lib/ProjectsDBStack.js:22:5)",
               "Object.main [as default] (/Users/mat/projects/project-tracker/project-tracker-infra/lib/index.js:7:3)",

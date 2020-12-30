@@ -1,6 +1,6 @@
 {
   "Resources": {
-    "TableCD117FA1": {
+    "ProjectsTableAA0A2089": {
       "Type": "AWS::DynamoDB::Table",
       "Properties": {
         "KeySchema": [
@@ -28,28 +28,28 @@
       "UpdateReplacePolicy": "Retain",
       "DeletionPolicy": "Retain",
       "Metadata": {
-        "aws:cdk:path": "dev-project-tracker-infra-projects/Table/Resource"
+        "aws:cdk:path": "dev-project-tracker-infra-projectsDb/ProjectsTable/Resource"
       }
     }
   },
   "Outputs": {
-    "TableName": {
+    "ProjectsTableName": {
       "Value": {
-        "Ref": "TableCD117FA1"
+        "Ref": "ProjectsTableAA0A2089"
       },
       "Export": {
-        "Name": "dev-project-tracker-infra-TableName"
+        "Name": "dev-project-tracker-infra-ProjectsTableName"
       }
     },
-    "TableArn": {
+    "ProjectsTableArn": {
       "Value": {
         "Fn::GetAtt": [
-          "TableCD117FA1",
+          "ProjectsTableAA0A2089",
           "Arn"
         ]
       },
       "Export": {
-        "Name": "dev-project-tracker-infra-TableArn"
+        "Name": "dev-project-tracker-infra-ProjectsTableArn"
       }
     }
   }
